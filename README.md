@@ -36,5 +36,5 @@ of this layer: `Paul_Woegerer@mentor.com` and `Nathan_Lynch@mentor.com`
 General Information
 -------------------
 
-Browse: https://github.com/MentorEmbedded/meta-sourcery-analyzer
-Clone: git@github.com:MentorEmbedded/meta-sourcery-analyzer.git
+- Browse: https://github.com/MentorEmbedded/meta-sourcery-analyzer
+- Clone: https://github.com/MentorEmbedded/meta-sourcery-analyzer.git

@@ -26,6 +26,8 @@ To following modifications are provided on top of Yocto 1.6:
   to mitigate the fork-without-exec deadlock issue of LTTng 2.4
 - Enable busybox setsid and getopt (+ long options support) applets
 - Enable -n for busybox head applet
+- Workaround Yocto 1.6 GCC bug
+  (handling of externals with `__attribute__((weak, visibility("hidden")))`)
 
 Maintainers
 -----------

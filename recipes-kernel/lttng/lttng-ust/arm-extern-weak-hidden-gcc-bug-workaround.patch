@@ -1,0 +1,18 @@
+diff --git a/include/lttng/tracepoint.h b/include/lttng/tracepoint.h
+index 66e2abd..50cef26 100644
+--- a/include/lttng/tracepoint.h
++++ b/include/lttng/tracepoint.h
+@@ -313,9 +313,11 @@ __tracepoints__destroy(void)
+  * (or for the whole main program).
+  */
+ extern struct tracepoint * const __start___tracepoints_ptrs[]
+-	__attribute__((weak, visibility("hidden")));
++	__attribute__((weak));
++asm(".hidden __start___tracepoints_ptrs");
+ extern struct tracepoint * const __stop___tracepoints_ptrs[]
+-	__attribute__((weak, visibility("hidden")));
++	__attribute__((weak));
++asm(".hidden __stop___tracepoints_ptrs");
+ 
+ /*
+  * When TRACEPOINT_PROBE_DYNAMIC_LINKAGE is defined, we do not emit a
